@@ -1,3 +1,11 @@
+# Plyfe's Boxen
+
+This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Automated Mac provisioning.
+
+
+
+
+
 # Our Boxen
 
 This is a template Boxen project designed for your organization to fork and

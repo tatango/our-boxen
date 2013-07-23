@@ -81,6 +81,8 @@ node default {
   include ruby::1_9_2
   include ruby::2_0_0
 
+  include plyfe::environment
+
   # common, useful packages
   package {
     [
