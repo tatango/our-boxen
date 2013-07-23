@@ -63,6 +63,10 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
+  include osx::dock::2d
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
+
   # node versions
   include nodejs::v0_4
   include nodejs::v0_6
@@ -70,9 +74,11 @@ node default {
   include nodejs::v0_10
 
   # default ruby versions
+  class { 'ruby::global':
+    version => '1.9.3'
+  }
   include ruby::1_8_7
   include ruby::1_9_2
-  include ruby::1_9_3
   include ruby::2_0_0
 
   # common, useful packages
