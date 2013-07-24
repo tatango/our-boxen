@@ -5,5 +5,5 @@ class plyfe::environment {
   include plyfe::apps::mac
   include plyfe::apps::npm
 
-  # include projects::plyfeme   # TODO.
+  include projects::all
 }

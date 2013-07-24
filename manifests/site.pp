@@ -68,10 +68,12 @@ node default {
   include osx::global::expand_save_dialog
 
   # node versions
+  class { 'nodejs::global':
+    version => 'v0.10'
+  }
   include nodejs::v0_4
   include nodejs::v0_6
   include nodejs::v0_8
-  include nodejs::v0_10
 
   # default ruby versions
   class { 'ruby::global':
