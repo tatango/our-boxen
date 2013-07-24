@@ -9,8 +9,6 @@ class projects::plyfeme {
     source        => 'plyfe/plyfeme'
   }
 
-  include mysql
-
   package {
     [
       'casperjs',
