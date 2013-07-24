@@ -16,8 +16,16 @@ class people::etohehir {
     'alias.s':         value => 'status';
   }
 
-  # Custom apps on a per-user basis. Still need to add these entries to Puppetfile.
+  # Apps on a per-user basis. Still need to add these entries to Puppetfile.
   include vlc
+
+  # Homebrew packages on a per-user basis.
+  package {
+    [
+      'sl'  # Steam-locomotive - just for demo purposes.
+    ]:
+  }
+
 
   # Dotfiles and symbolic link definition.
   repository {
