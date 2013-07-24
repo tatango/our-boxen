@@ -20,7 +20,8 @@ class plyfe::apps::mac {
   package {
     [
       'heroku-toolbelt',
-      'pidof'
+      'pidof',
+      'sl'                # Steam-locomotive, purely for a laugh.
     ]:
   }
 

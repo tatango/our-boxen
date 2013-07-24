@@ -13,7 +13,7 @@ class projects::plyfeme {
     [
       'casperjs',
       'imagemagick',
-      'qt',
+      # 'qt',  # TODO: do we really need this? Takes ages to install.
       'redis'
     ]:
   }

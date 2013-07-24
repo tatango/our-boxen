@@ -19,7 +19,7 @@ class people::etohehir {
   # Homebrew packages on a per-user basis.
   package {
     [
-      'sl'  # Steam-locomotive - just for demo purposes.
+      'tree'
     ]:
   }
 
