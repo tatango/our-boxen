@@ -9,10 +9,11 @@ class projects::plyfeme {
     source        => 'plyfe/plyfeme'
   }
 
+  include mysql
+
   package {
     [
       'casperjs',
-      'mysql',
       'imagemagick',
       'qt'
       'redis',
@@ -25,6 +26,9 @@ class projects::plyfeme {
   # - Set up socket for mysql
   # - Start mysql on reboot
   # - Start redis
+  # - Install certificate
+  # - (maybe) install plyfeec2 key
+  # - Set up sensible sublime defaults - should be a user level module.
 
 
 }
