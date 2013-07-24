@@ -15,8 +15,8 @@ class projects::plyfeme {
     [
       'casperjs',
       'imagemagick',
-      'qt'
-      'redis',
+      'qt',
+      'redis'
     ]:
   }
 
