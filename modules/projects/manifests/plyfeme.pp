@@ -34,13 +34,16 @@ class projects::plyfeme {
   host { "development-qb.plyfe.me":
     ip => "127.0.0.1",
   }
-  host { "foobar":       # test - get rid of me.
-    ip => "127.0.0.1",
+
+  # MySql socket.
+  # TODO: Eventually, replace /tmp/mysql.sock within database.yml, rendering this unnecessary.
+  file { "/tmp/mysql.sock":
+    ensure  => link,
+    target  => "${boxen::config}/data/mysql/socket"
   }
 
 
   # TODO automate:
-  # - Hosts file jigging
   # - Set up socket for mysql
   # - Set up plyfedbdude user: pull this into a script
   # - Start redis
