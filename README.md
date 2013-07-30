@@ -3,17 +3,18 @@
 This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Automated Mac provisioning.
 
 
-## Getting Started with Boxen at Plyfe (tested on clean OS X 10.8 machine):
+## Getting Started with Boxen at Plyfe:
+*tested on clean OS X 10.8 machine*
 
-1) Install Xcode from the Mac App Store.
-2) Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
-3) Open Terminal.app and do the following:
+1. Install Xcode from the Mac App Store.
+2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
+3. Open Terminal.app and do the following:
     sudo mkdir -p /opt/boxen
     sudo chown ${USER}:staff /opt/boxen
     git clone https://github.com/plyfe/our-boxen.git /opt/boxen/repo
     cd /opt/boxen/repo
-4) Optional, but recommended: create a file with your github alias at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
-5) Run `script/boxen --debug --profile`.
+4. Optional, but recommended: create a file with your github alias at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
+5. Run `script/boxen --debug --profile`.
 
 # Our Boxen
 
