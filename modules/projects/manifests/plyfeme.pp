@@ -9,14 +9,27 @@ class projects::plyfeme {
     source        => 'plyfe/plyfeme'
   }
 
-  # Brew packages for the project.
+  # Homebrew packages for the project.
   package {
     [
       'casperjs',
       'imagemagick'
-      #'qt'                 # Consider installing this as a zip file instead.
     ]:
   }
+
+  # QT Package. Install from dmg rather than homebrew as it builds from source by default in the latter
+  # and takes forever.
+  # NOTE: If this fails, uncomment the bottom block and use that style instead. Otherwise remove bottom.
+  package { 'QT':
+    ensure   => installed,
+    source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
+    provider => pkgdmg,
+  }
+  # package { 'QT':
+  #   ensure   => installed,
+  #   source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
+  #   provider => appdmg,
+  # }
 
   # Hosts file entries for the project.
   host { "development.plyfe.me":
@@ -39,9 +52,8 @@ class projects::plyfeme {
   # TODO: Eventually, replace /tmp/mysql.sock within database.yml, rendering this unnecessary.
   file { "/tmp/mysql.sock":
     ensure  => link,
-    target  => "${boxen::config}/data/mysql/socket"
+    target  => "${::boxen_home}/data/mysql/socket"
   }
-
 
   # TODO automate:
   # - Set up socket for mysql
@@ -53,6 +65,5 @@ class projects::plyfeme {
   # - Install certificate
   # - (maybe) install plyfeec2 key
   # - Set up sensible sublime defaults - should be a user level module.
-
 
 }

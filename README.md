@@ -8,6 +8,7 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 
 1. Install Xcode from the Mac App Store.
 2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
+3. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (5) to remove the check.
 3. Open Terminal.app and do the following:
     sudo mkdir -p /opt/boxen
     sudo chown ${USER}:staff /opt/boxen
