@@ -20,16 +20,16 @@ class projects::plyfeme {
   # QT Package. Install from dmg rather than homebrew as it builds from source by default in the latter
   # and takes forever.
   # NOTE: If this fails, uncomment the bottom block and use that style instead. Otherwise remove bottom.
-  package { 'QT':
-    ensure   => installed,
-    source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
-    provider => pkgdmg,
-  }
   # package { 'QT':
   #   ensure   => installed,
   #   source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
-  #   provider => appdmg,
+  #   provider => pkgdmg,
   # }
+  package { 'QT':
+    ensure   => installed,
+    source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
+    provider => appdmg,
+  }
 
   # Hosts file entries for the project.
   host { "development.plyfe.me":

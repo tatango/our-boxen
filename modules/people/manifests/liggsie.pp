@@ -19,7 +19,7 @@ class people::liggsie {
   # Homebrew packages on a per-user basis.
   package {
     [
-      'synergy'
+      'tree'
     ]:
   }
 
