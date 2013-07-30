@@ -17,10 +17,10 @@ git clone https://github.com/plyfe/our-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 ```
 
-4. Optional, but recommended: create a file with your github alias at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
+4. Optional, but recommended: create a file with your github handle at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
 5. Run `script/boxen --debug --profile`.
 
-# Our Boxen
+# Our Boxen (instructions from GitHub Inc...)
 
 This is a template Boxen project designed for your organization to fork and
 modify appropriately.
