@@ -20,6 +20,12 @@ cd /opt/boxen/repo
 4. Optional, but recommended: create a file with your github handle at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
 5. Run `script/boxen --debug --profile`.
 
+## Initial Setup for the Plyfeme Project:
+1. Run `cd ~/src/plyfeme`.
+2. TODO: DATABASE USER SCRIPT HERE
+3. Run `bundle install`.
+4. Run `bundle exec rake db:drop db:create db:migrate db:seed db:test:prepare`.
+
 # Our Boxen (instructions from GitHub Inc...)
 
 This is a template Boxen project designed for your organization to fork and
