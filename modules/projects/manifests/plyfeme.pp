@@ -9,24 +9,43 @@ class projects::plyfeme {
     source        => 'plyfe/plyfeme'
   }
 
+  # Brew packages for the project.
   package {
     [
       'casperjs',
-      'imagemagick',
-      # 'qt',  # TODO: do we really need this? Takes ages to install.
-      'redis'
+      'imagemagick'
+      #'qt'                 # Consider installing this as a zip file instead.
     ]:
   }
 
-  # TODO initial setup:
-  # Database raking not working natively. plyfedbdude cannot connect through socket. Fix.
+  # Hosts file entries for the project.
+  host { "development.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "en.development.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "es.development.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "development-rds.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "development-qb.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "foobar":       # test - get rid of me.
+    ip => "127.0.0.1",
+  }
+
 
   # TODO automate:
   # - Hosts file jigging
-  # - Set up plyfedbdude user
   # - Set up socket for mysql
-  # - Start mysql on reboot
+  # - Set up plyfedbdude user: pull this into a script
   # - Start redis
+  # - do the initial rake without the initial drop
+  # - Start mysql on reboot
   # - Install hall binary (no package yet on github.com/boxen)
   # - Install certificate
   # - (maybe) install plyfeec2 key
