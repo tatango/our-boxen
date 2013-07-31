@@ -5,7 +5,7 @@ class people::chrislopresto {
   # Git global settings.
   git::config::global {
     'user.name':        value => 'Chris LoPresto';
-    'user.email':       value => 'chris@plyfe.me';
+    'user.email':       value => 'chrislopresto@gmail.com';
     'core.editor':      value => 'vim';
     'color.ui':         value => 'true';
 
