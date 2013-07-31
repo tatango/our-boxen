@@ -23,5 +23,3 @@
 
 # required for Github Enterprise (defaults to "https://github.com/%s")
 # ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
-
-ENV['BOXEN_REDIS_PORT'] = '6379'

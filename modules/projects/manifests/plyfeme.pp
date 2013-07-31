@@ -14,17 +14,18 @@ class projects::plyfeme {
     [
       'casperjs',
       'imagemagick',
+      'qt',
       's3cmd'
     ]:
   }
 
   # QT Package. Install from dmg rather than homebrew as it builds from source by default in the latter
   # and takes forever.
-  package { 'QT':
-    ensure   => installed,
-    source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
-    provider => appdmg,
-  }
+  # package { 'QT':
+  #   ensure   => installed,
+  #   source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
+  #   provider => appdmg,
+  # }
 
   # Hosts file entries for the project.
   host { "development.plyfe.me":
