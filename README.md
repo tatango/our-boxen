@@ -29,7 +29,7 @@ cd /opt/boxen/repo
 ## Initial Setup for the Plyfeme Project:
 1. Run `cd ~/src/plyfeme`.
 2. Run `mysql -u root < db/init_dev_user.sql`
-3. Run `bundle install`.
+3. Run `bundle install`. (If this fails the first time, `cd /opt/boxen/repo` and `script/boxen`. Then try `bundle install` again. This appears to be a bug in boxen or our script - the system wide gems sometimes don't get pulled in first time around).
 4. Run `bundle exec rake db:drop db:create db:migrate db:seed db:test:prepare`.
 
 # Our Boxen (instructions from GitHub Inc...)
