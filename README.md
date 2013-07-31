@@ -9,7 +9,7 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 1. Install Xcode from the Mac App Store.
 2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
 3. In that same Download window, install the iOS Simulator for the current and previous version *(as of the time of writing on 2013-07-31, that would be iOS6 and iOS5.1)*.
-4. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (5) to remove the check.
+4. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (7) to remove the check.
 5. Open Terminal.app and do the following:
 ```bash
 sudo mkdir -p /opt/boxen
