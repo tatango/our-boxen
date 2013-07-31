@@ -50,7 +50,6 @@ class projects::plyfeme {
   }
 
   # TODO automate:
-  # - Set up plyfedbdude user: pull this into a script
   # - Start redis
   # - do the initial rake without the initial drop
   # - Start mysql on reboot

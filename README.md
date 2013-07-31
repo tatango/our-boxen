@@ -8,8 +8,9 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 
 1. Install Xcode from the Mac App Store.
 2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
-3. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (5) to remove the check.
-3. Open Terminal.app and do the following:
+3. In that same Download window, install the iOS Simulator for the current and previous version *(as of the time of writing on 2013-07-31, that would be iOS6 and iOS5.1)*.
+4. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (5) to remove the check.
+5. Open Terminal.app and do the following:
 ```bash
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
@@ -17,12 +18,12 @@ git clone https://github.com/plyfe/our-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 ```
 
-4. Optional, but recommended: create a file with your github handle at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
-5. Run `script/boxen --debug --profile`.
+6. Optional, but recommended: create a file with your github handle at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
+7. Run `script/boxen --debug --profile`.
 
 ## Initial Setup for the Plyfeme Project:
 1. Run `cd ~/src/plyfeme`.
-2. TODO: DATABASE USER SCRIPT HERE
+2. Run `mysql -u root < db/init_dev_user.sql`
 3. Run `bundle install`.
 4. Run `bundle exec rake db:drop db:create db:migrate db:seed db:test:prepare`.
 
