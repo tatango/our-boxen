@@ -6,10 +6,15 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 ## Getting Started with Boxen at Plyfe:
 *tested on clean OS X 10.8 machine*
 
+### Prerequisites
+1. You have a GitHub account, and have been added to the plyfe organization.
+2. Someone has 'onboarded' you to the plyfe/our-boxen repository and has created a `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` file. See @liggsie or @chrislopresto for more info.
+
+### Steps
 1. Install Xcode from the Mac App Store.
 2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
 3. In that same Download window, install the iOS Simulator for the current and previous version *(as of the time of writing on 2013-07-31, that would be iOS6 and iOS5.1)*.
-4. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (7) to remove the check.
+4. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (6) to remove the check.
 5. Open Terminal.app and do the following:
 ```bash
 sudo mkdir -p /opt/boxen
@@ -18,8 +23,7 @@ git clone https://github.com/plyfe/our-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 ```
 
-6. Optional, but recommended: create a file with your github handle at `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` and fill out details appropriately.
-7. Run `script/boxen --debug --profile`.
+6. Run `script/boxen --debug --profile`.
 
 ## Initial Setup for the Plyfeme Project:
 1. Run `cd ~/src/plyfeme`.
