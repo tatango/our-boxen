@@ -19,6 +19,7 @@ class projects::plyfeme {
     ]:
   }
 
+  # TODO: Remove me once we've verified an end to end test.
   # QT Package. Install from dmg rather than homebrew as it builds from source by default in the latter
   # and takes forever.
   # package { 'QT':
