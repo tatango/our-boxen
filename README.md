@@ -24,6 +24,7 @@ cd /opt/boxen/repo
 ```
 
 6. Run `script/boxen --debug --profile`.
+7. When complete, close Terminal.app, and open iTerm.app via Spotlight search. Ignore Terminal and use iTerm for all future command line interactions :D
 
 ## Initial Setup for the Plyfeme Project:
 1. Run `cd ~/src/plyfeme`.
