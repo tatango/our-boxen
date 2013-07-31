@@ -13,7 +13,8 @@ class projects::plyfeme {
   package {
     [
       'casperjs',
-      'imagemagick'
+      'imagemagick',
+      's3cmd'
     ]:
   }
 
