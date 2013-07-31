@@ -50,9 +50,7 @@ class projects::plyfeme {
   }
 
   # TODO automate:
-  # - Start redis
-  # - do the initial rake without the initial drop
-  # - Start mysql on reboot
+  # - redis port... set to 16379, app expects 6379.
   # - Install hall binary (no package yet on github.com/boxen)
   # - Install certificate
   # - (maybe) install plyfeec2 key
