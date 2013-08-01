@@ -19,15 +19,6 @@ class projects::plyfeme {
     ]:
   }
 
-  # TODO: Remove me once we've verified an end to end test.
-  # QT Package. Install from dmg rather than homebrew as it builds from source by default in the latter
-  # and takes forever.
-  # package { 'QT':
-  #   ensure   => installed,
-  #   source   => 'http://download.qt-project.org/official_releases/qt/5.1/5.1.0/qt-mac-opensource-5.1.0-clang-offline.dmg',
-  #   provider => appdmg,
-  # }
-
   # Hosts file entries for the project.
   host { "development.plyfe.me":
     ip => "127.0.0.1",
@@ -45,6 +36,11 @@ class projects::plyfeme {
     ip => "127.0.0.1",
   }
 
+  # Create the project tmp directory (used for JHW and ignored by git).
+  file { "${boxen::config::srcdir}/${name}/tmp":
+    ensure => "directory",
+  }
+
   # MySql socket.
   # TODO: Eventually, replace /tmp/mysql.sock within database.yml, rendering this unnecessary.
   file { "/tmp/mysql.sock":
@@ -53,8 +49,6 @@ class projects::plyfeme {
   }
 
   # TODO automate:
-  # - redis port... set to 16379, app expects 6379.
-  # - Install hall binary (no package yet on github.com/boxen)
   # - Install certificate
   # - (maybe) install plyfeec2 key
   # - Set up sensible sublime defaults - should be a user level module.

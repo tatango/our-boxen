@@ -20,7 +20,7 @@ class plyfe::apps::mac {
   package { 'Hall':
     ensure   => installed,
     source   => 'https://hall.com/desktop/osx/installers/Hall_1_0_4.dmg',
-    provider => appdmg,
+    provider => pkgdmg,
   }
 
   # Homebrew Packages
