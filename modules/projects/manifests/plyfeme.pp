@@ -37,7 +37,7 @@ class projects::plyfeme {
   }
 
   # Create the project tmp directory (used for JHW and ignored by git).
-  file { "${boxen::config::srcdir}/${name}/tmp":
+  file { "${boxen::config::srcdir}/plyfeme/tmp":
     ensure => "directory",
   }
 
