@@ -6,7 +6,8 @@ class projects::plyfeme {
     mysql         => true,
     redis         => true,
     ruby          => '1.9.3',
-    source        => 'plyfe/plyfeme'
+    dir           => "${boxen::config::srcdir}/plyfe/plyfeme",
+    source        => 'plyfe/plyfeme',
   }
 
   # Homebrew packages for the project.
@@ -37,7 +38,7 @@ class projects::plyfeme {
   }
 
   # Create the project tmp directory (used for JHW and ignored by git).
-  file { "${boxen::config::srcdir}/plyfeme/tmp":
+  file { "${boxen::config::srcdir}/plyfe/plyfeme/tmp":
     ensure => "directory",
   }
 
