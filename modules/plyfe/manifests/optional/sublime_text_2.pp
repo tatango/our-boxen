@@ -7,7 +7,7 @@ class plyfe::optional::sublime_text_2 {
   $base = "/Users/${::luser}/Library/Application Support"
 
   exec { 'Idempotent creation of User preferences directory':
-    command => "mkdir -p ${base}/Sublime Text 2/Packages/User"
+    command => "mkdir -p '${base}/Sublime Text 2/Packages/User'"
   }
 
   file { "${base}/Sublime Text 2/Packages/User/Preferences.sublime-settings":
