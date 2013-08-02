@@ -47,5 +47,8 @@ class plyfe::optional::sublime_text_2 {
   sublime_text_2::package { 'sublime-text-2-git':
     source => 'kemayo/sublime-text-2-git'
   }
+  sublime_text_2::package { 'Theme - Soda':
+    source => 'buymeasoda/soda-theme'
+  }
 
 }
