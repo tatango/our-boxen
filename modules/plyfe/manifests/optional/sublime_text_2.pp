@@ -4,12 +4,6 @@ class plyfe::optional::sublime_text_2 {
 
   include sublime_text_2
 
-  repository {
-    "dotfiles":
-      source   => 'plyfe/basic-dotfiles',
-      path     => "${::boxen_srcdir}/dotfiles";
-  }
-
   $base = "/Users/${::luser}/Library/Application Support"
   file { "${base}/Sublime Text 2/Packages/User/Preferences.sublime-settings":
     ensure  => link,
