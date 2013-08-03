@@ -14,7 +14,13 @@ class people::chrislopresto {
   }
 
   # Apps on a per-user basis. Still need to add these entries to Puppetfile.
+  include charles
+  include onepassword
+  include tower
+  include transmission
+  include rdio
   include vlc
+  include zsh
 
   # Homebrew packages on a per-user basis.
   package {
