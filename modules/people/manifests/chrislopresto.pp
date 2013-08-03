@@ -20,7 +20,6 @@ class people::chrislopresto {
   include transmission
   include rdio
   include vlc
-  include zsh
 
   # Homebrew packages on a per-user basis.
   package {
