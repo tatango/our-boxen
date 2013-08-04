@@ -5,7 +5,7 @@ class people::liggsie::config::git {
   git::config::global {
     'user.name':        value => 'Dave Liggat';
     'user.email':       value => 'dliggat@gmail.com';
-    'core.editor':      value => 'subl';
+    'core.editor':      value => 'vim';
     'color.ui':         value => 'true';
 
     'alias.b':         value => 'branch';
