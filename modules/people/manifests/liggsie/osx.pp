@@ -2,7 +2,7 @@ class people::liggsie::osx {
 
   notify { 'class people::liggsie::osx declared': }
 
-  osx::recovery_message { 'If this Mac is found, please contact: dliggat@gmail.com.': }
+  # osx::recovery_message { 'If this Mac is found, please contact: dliggat@gmail.com.': }
 
   # include osx::dock::2d
   # include osx::dock::dim_hidden_apps
