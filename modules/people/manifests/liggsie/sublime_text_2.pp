@@ -1,6 +1,6 @@
-class people::liggsie::config::sublime_text_2 {
+class people::liggsie::sublime_text_2 {
 
-  notify { 'class people::liggsie::config::sublime_text_2 declared': }
+  notify { 'class people::liggsie::sublime_text_2 declared': }
 
   include sublime_text_2
 
@@ -39,6 +39,9 @@ class people::liggsie::config::sublime_text_2 {
   }
   sublime_text_2::package { 'SublimeLinter':
     source => 'SublimeLinter/SublimeLinter'
+  }
+  sublime_text_2::package { 'SublimePuppet':
+    source => 'russCloak/SublimePuppet'
   }
   sublime_text_2::package { 'jQuery':
     source => 'SublimeText/jQuery'

@@ -1,6 +1,6 @@
-class people::liggsie::config::osx {
+class people::liggsie::osx {
 
-  notify { 'class people::liggsie::config::osx declared': }
+  notify { 'class people::liggsie::osx declared': }
 
   osx::recovery_message { 'If this Mac is found, please contact: dliggat@gmail.com.': }
 

@@ -2,11 +2,11 @@ class people::liggsie {
 
   notify { 'class people::liggsie declared': }
 
-  include people::liggsie::config::apps
-  include people::liggsie::config::dotfiles
-  include people::liggsie::config::git
-  include people::liggsie::config::homebrew
-  include people::liggsie::config::osx
-  include people::liggsie::config::sublime_text_2
+  include people::liggsie::apps
+  include people::liggsie::dotfiles
+  include people::liggsie::git
+  include people::liggsie::homebrew
+  include people::liggsie::osx
+  include people::liggsie::sublime_text_2
 
 }

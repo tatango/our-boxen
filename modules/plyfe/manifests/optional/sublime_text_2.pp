@@ -41,6 +41,9 @@ class plyfe::optional::sublime_text_2 {
   sublime_text_2::package { 'SublimeLinter':
     source => 'SublimeLinter/SublimeLinter'
   }
+  sublime_text_2::package { 'SublimePuppet':
+    source => 'russCloak/SublimePuppet'
+  }
   sublime_text_2::package { 'jQuery':
     source => 'SublimeText/jQuery'
   }

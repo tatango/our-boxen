@@ -1,6 +1,6 @@
-class people::liggsie::config::apps {
+class people::liggsie::apps {
 
-  notify { 'class people::liggsie::config::apps declared': }
+  notify { 'class people::liggsie::apps declared': }
 
   include chrome
   include dropbox

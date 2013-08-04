@@ -1,6 +1,6 @@
-class people::liggsie::config::dotfiles {
+class people::liggsie::dotfiles {
 
-  notify { 'class people::liggsie::config::dotfiles declared': }
+  notify { 'class people::liggsie::dotfiles declared': }
 
   repository {
     "dotfiles":

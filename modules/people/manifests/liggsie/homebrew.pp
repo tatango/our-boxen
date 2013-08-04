@@ -1,6 +1,6 @@
-class people::liggsie::config::homebrew {
+class people::liggsie::homebrew {
 
-  notify { 'class people::liggsie::config::homebrew declared': }
+  notify { 'class people::liggsie::homebrew declared': }
 
   package {
     [
