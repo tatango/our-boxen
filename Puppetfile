@@ -38,6 +38,7 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "alfred",         "1.1.2"
 github "charles",        "1.0.2"
 github "chrome",         "1.1.1"
 github "dropbox",        "1.1.1"
@@ -57,6 +58,7 @@ github "tower",          "1.0.0"
 github "transmission",   "1.0.0"
 github "vim",            "1.0.2"
 github "vlc",            "1.0.0"
+github "vmware_fusion",  "1.0.0"
 github "wget",           "1.0.0"
 github "xquartz",        "1.1.0"
 github "zsh",            "1.0.0"

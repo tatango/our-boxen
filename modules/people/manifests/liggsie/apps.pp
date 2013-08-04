@@ -2,6 +2,7 @@ class people::liggsie::apps {
 
   notify { 'class people::liggsie::apps declared': }
 
+  include alfred
   include chrome
   include dropbox
   include firefox
@@ -15,6 +16,7 @@ class people::liggsie::apps {
   include transmission
   include vim
   include vlc
+  include vmware_fusion
   include wget
 
 }
