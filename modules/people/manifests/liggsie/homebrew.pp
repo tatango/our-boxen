@@ -4,9 +4,6 @@ class people::liggsie::homebrew {
 
   package {
     [
-      'heroku-toolbelt',
-      'pidof',
-      'sl',
       'sqlite',
       'synergy',
       'tree'
