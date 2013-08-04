@@ -5,7 +5,6 @@ class people::liggsie::homebrew {
   package {
     [
       'sqlite',
-      'synergy',
       'tree'
     ]:
   }
