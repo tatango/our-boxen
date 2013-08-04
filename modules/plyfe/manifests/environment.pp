@@ -5,6 +5,9 @@ class plyfe::environment {
   file { "${boxen::config::srcdir}/plyfe":
     ensure => "directory",
   }
+  include osx::dock::2d
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
 
   include plyfe::apps::gems
   include plyfe::apps::mac

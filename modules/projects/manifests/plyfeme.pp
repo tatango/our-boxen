@@ -50,8 +50,6 @@ class projects::plyfeme {
   }
 
   # TODO automate:
-  # - Install certificate
   # - (maybe) install plyfeec2 key
-  # - Set up sensible sublime defaults - should be a user level module.
 
 }

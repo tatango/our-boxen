@@ -63,10 +63,6 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  include osx::dock::2d
-  include osx::global::expand_print_dialog
-  include osx::global::expand_save_dialog
-
   # node versions
   class { 'nodejs::global':
     version => 'v0.10'
@@ -81,19 +77,12 @@ node default {
   }
   include ruby::1_8_7
   include ruby::1_9_2
+  include ruby::1_9_3
   include ruby::2_0_0
 
   include plyfe::environment
 
-  # common, useful packages
-  package {
-    [
-      'ack',
-      'findutils',
-      'gnu-tar'
-    ]:
-  }
-
+  # Symlink from boxen source directory to the boxen repo.
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir

@@ -25,6 +25,8 @@ class plyfe::apps::mac {
   # Homebrew Packages
   package {
     [
+      'findutils',
+      'gnu-tar',
       'heroku-toolbelt',
       'pidof',
       'sl'                # Steam-locomotive, purely for a laugh.
