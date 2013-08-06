@@ -7,6 +7,7 @@ class people::liggsie::apps {
   include dropbox
   include firefox
   include gitx
+  include handbrake
   include heroku
   include imagemagick
   include iterm2::stable
