@@ -35,6 +35,9 @@ github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
 
+# Apparently necessary for puppet-osx to work.
+github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key"
+
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
