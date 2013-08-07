@@ -23,3 +23,6 @@
 
 # required for Github Enterprise (defaults to "https://github.com/%s")
 # ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
+
+# TODO: Try this out.
+ENV["BOXEN_SRC_DIR"] = "/Users/#{user}/git-boxen"
