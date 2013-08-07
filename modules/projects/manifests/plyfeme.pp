@@ -37,9 +37,10 @@ class projects::plyfeme {
     ip => "127.0.0.1",
   }
 
-  # Create the project tmp directory (used for JHW and ignored by git).
+  # Create the project tmp directory (used for JasmineHeadlessWebkit and not in the git repo).
   file { "${boxen::config::srcdir}/plyfe/plyfeme/tmp":
-    ensure => "directory",
+    ensure  => "directory",
+    require => Boxen::Project['plyfeme']
   }
 
   # MySql socket.
@@ -48,8 +49,9 @@ class projects::plyfeme {
     ensure  => link,
     target  => "${::boxen_home}/data/mysql/socket"
   }
-
-  # TODO automate:
-  # - (maybe) install plyfeec2 key
+  ->
+  notify {'after message':
+    message => "This is a test of the anonymous precedence functionality in Puppet.",
+  }
 
 }
