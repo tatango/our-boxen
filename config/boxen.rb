@@ -24,5 +24,5 @@
 # required for Github Enterprise (defaults to "https://github.com/%s")
 # ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
 
-ENV["CODE"]          = [ 'Users', `whoami`.strip, 'code' ].join('/')  # Top level code directory.
-ENV["BOXEN_SRC_DIR"] = [ ENV['CODE'], 'boxen' ].join('/')             # Boxen's own git repo directory.
+ENV["CODE"]          = "/Users/#{`whoami`.strip}/code"     # Top level code directory.
+ENV["BOXEN_SRC_DIR"] = [ ENV['CODE'], 'boxen' ].join('/')  # Boxen's own git repos.
