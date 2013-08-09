@@ -9,6 +9,7 @@ class people::liggsie {
   include people::liggsie::symlinks
   include people::liggsie::loginitems
   include people::liggsie::osx
-  include people::liggsie::sublime_text_2
+  # include people::liggsie::sublime_text_2
+  include plyfe::optional::sublime_text_2
 
 }
