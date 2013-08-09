@@ -10,10 +10,10 @@ class plyfe::optional::sublime_text_2 {
     command => "mkdir -p '${base}/Sublime Text 2/Packages/User'"
   }
 
-  file { "${base}/Sublime Text 2/Packages/User/Preferences.sublime-settings":
-    ensure  => link,
-    target  => "${::boxen_srcdir}/dotfiles/sublime_text_2/Packages/User/Preferences.sublime-settings",
-    require => Repository["dotfiles"],
+  file { 'Preferences.sublime-settings':
+    path    => "${base}/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+    ensure  => file,
+    content => template("optional/Preferences.sublime-settings.erb"),
   }
 
   # Default, useful plugins for everyone.
