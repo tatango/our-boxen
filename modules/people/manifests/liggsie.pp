@@ -6,6 +6,7 @@ class people::liggsie {
   include people::liggsie::dotfiles
   include people::liggsie::git
   include people::liggsie::homebrew
+  include people::liggsie::symlinks
   include people::liggsie::loginitems
   include people::liggsie::osx
   include people::liggsie::sublime_text_2
