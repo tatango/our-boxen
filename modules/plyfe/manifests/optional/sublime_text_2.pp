@@ -13,7 +13,7 @@ class plyfe::optional::sublime_text_2 {
   file { 'Preferences.sublime-settings':
     path    => "${base}/Sublime Text 2/Packages/User/Preferences.sublime-settings",
     ensure  => file,
-    content => template("optional/Preferences.sublime-settings.erb"),
+    content => template("plyfe/Preferences.sublime-settings.erb"),
   }
 
   # Default, useful plugins for everyone.
