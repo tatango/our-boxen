@@ -26,7 +26,7 @@ class people::liggsie::loginitems {
     'Moom':
       name    => 'Moom',
       path    => '/Applications/Moom.app',
-      hidden  => true;
+      hidden  => false;
   }
 
 }

@@ -25,4 +25,5 @@
 # ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
 
 ENV["CODE"]          = "/Users/#{`whoami`.strip}/code"     # Top level code directory.
+`mkdir -p #{ENV["CODE"]}`  # A bit of a hack to ensure BOXEN_SRC_DIR's parent exists. Difficult to guarantee in Boxen.
 ENV["BOXEN_SRC_DIR"] = [ ENV['CODE'], 'boxen' ].join('/')  # Boxen's own git repos.
