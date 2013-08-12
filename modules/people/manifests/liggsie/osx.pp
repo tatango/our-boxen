@@ -1,6 +1,6 @@
-class people::liggsie::osx {
+class people::dliggat::osx {
 
-  notify { 'class people::liggsie::osx declared': }
+  notify { 'class people::dliggat::osx declared': }
 
   include osx::dock::2d
   include osx::dock::dim_hidden_apps

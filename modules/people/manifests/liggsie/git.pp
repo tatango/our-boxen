@@ -1,6 +1,6 @@
-class people::liggsie::git {
+class people::dliggat::git {
 
-  notify { 'class people::liggsie::git declared': }
+  notify { 'class people::dliggat::git declared': }
 
   git::config::global {
     'user.name':        value => 'Dave Liggat';

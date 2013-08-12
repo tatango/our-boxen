@@ -1,6 +1,6 @@
-class people::liggsie::sublime_text_2 {
+class people::dliggat::sublime_text_2 {
 
-  notify { 'class people::liggsie::sublime_text_2 declared': }
+  notify { 'class people::dliggat::sublime_text_2 declared': }
 
   include sublime_text_2
 

@@ -1,6 +1,6 @@
-class people::liggsie::symlinks {
+class people::dliggat::symlinks {
 
-  notify { 'class people::liggsie::symlinks declared': }
+  notify { 'class people::dliggat::symlinks declared': }
 
   file { "${boxen::config::repodir}/bin/jsc":
     ensure  => link,

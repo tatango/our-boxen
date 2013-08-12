@@ -1,6 +1,6 @@
-class people::liggsie::loginitems {
+class people::dliggat::loginitems {
 
-  notify { 'class people::liggsie::loginitems declared': }
+  notify { 'class people::dliggat::loginitems declared': }
 
     osx_login_item {
     'Alfred 2':

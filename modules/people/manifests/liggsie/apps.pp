@@ -1,6 +1,6 @@
-class people::liggsie::apps {
+class people::dliggat::apps {
 
-  notify { 'class people::liggsie::apps declared': }
+  notify { 'class people::dliggat::apps declared': }
 
   include alfred
   include chrome

@@ -1,15 +1,15 @@
-class people::liggsie {
+class people::dliggat {
 
-  notify { 'class people::liggsie declared': }
+  notify { 'class people::dliggat declared': }
 
-  include people::liggsie::apps
-  include people::liggsie::dotfiles
-  include people::liggsie::git
-  include people::liggsie::homebrew
-  include people::liggsie::symlinks
-  include people::liggsie::loginitems
-  include people::liggsie::osx
-  # include people::liggsie::sublime_text_2
+  include people::dliggat::apps
+  include people::dliggat::dotfiles
+  include people::dliggat::git
+  include people::dliggat::homebrew
+  include people::dliggat::symlinks
+  include people::dliggat::loginitems
+  include people::dliggat::osx
+  # include people::dliggat::sublime_text_2
   include plyfe::optional::sublime_text_2
 
 }

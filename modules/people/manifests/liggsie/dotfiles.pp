@@ -1,10 +1,10 @@
-class people::liggsie::dotfiles {
+class people::dliggat::dotfiles {
 
-  notify { 'class people::liggsie::dotfiles declared': }
+  notify { 'class people::dliggat::dotfiles declared': }
 
   repository {
     "dotfiles":
-      source   => 'liggsie/dotfiles',
+      source   => 'dliggat/dotfiles',
       path     => "${::boxen_srcdir}/dotfiles";
   }
 

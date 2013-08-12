@@ -1,6 +1,6 @@
-class people::liggsie::homebrew {
+class people::dliggat::homebrew {
 
-  notify { 'class people::liggsie::homebrew declared': }
+  notify { 'class people::dliggat::homebrew declared': }
 
   package {
     [

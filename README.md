@@ -7,7 +7,7 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 
 ### Prerequisites
 1. You have a GitHub account, and have been added to the plyfe organization.
-2. Someone has 'onboarded' you to the plyfe/our-boxen repository and has created a `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` personal manifest file. See @liggsie or @chrislopresto for more info.
+2. Someone has 'onboarded' you to the plyfe/our-boxen repository and has created a `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` personal manifest file. See @dliggat or @chrislopresto for more info.
 
 ### Steps
 1. Install Xcode from the Mac App Store.
