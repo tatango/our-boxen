@@ -6,7 +6,7 @@ class projects::plyfeme {
     mysql         => true,
     redis         => true,
     ruby          => '1.9.3',
-    dir           => "${boxen::config::srcdir}/plyfe/plyfeme",
+    dir           => "${boxen::config::srcdir}/plyfeme",
     source        => 'plyfe/plyfeme',
   }
 
@@ -38,7 +38,7 @@ class projects::plyfeme {
   }
 
   # Create the project tmp directory (used for JasmineHeadlessWebkit and not in the git repo).
-  file { "${boxen::config::srcdir}/plyfe/plyfeme/tmp":
+  file { "${boxen::config::srcdir}/plyfeme/tmp":
     ensure  => "directory",
     require => Boxen::Project['plyfeme']
   }
