@@ -13,6 +13,7 @@ class people::dliggat::apps {
   include iterm2::stable
   include onepassword
   include sequel_pro
+  include sublime_text_2
   include textwrangler
   include transmission
   include vim

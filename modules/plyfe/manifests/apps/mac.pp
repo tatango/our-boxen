@@ -10,6 +10,7 @@ class plyfe::apps::mac {
   include iterm2::stable
   include redis
   include sequel_pro
+  include sublime_text_2
   include textwrangler
   include vim
   include wget
