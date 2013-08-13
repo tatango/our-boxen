@@ -2,8 +2,6 @@ class people::chrislopresto::sublime_text_2 {
 
   notify { 'class people::chrislopresto::sublime_text_2 declared': }
 
-  include sublime_text_2
-
   $base = "/Users/${::luser}/Library/Application Support"
 
   exec { 'Idempotent creation of User preferences directory':

@@ -2,8 +2,6 @@ class plyfe::optional::sublime_text_2 {
 
   notify { 'class plyfe::optional::sublime_text_2 declared': }
 
-  include sublime_text_2
-
   $base = "/Users/${::luser}/Library/Application Support"
 
   exec { 'Idempotent creation of User preferences directory':

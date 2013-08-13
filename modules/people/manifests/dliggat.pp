@@ -9,7 +9,6 @@ class people::dliggat {
   include people::dliggat::symlinks
   include people::dliggat::loginitems
   include people::dliggat::osx
-  # include people::dliggat::sublime_text_2
-  include plyfe::optional::sublime_text_2
+  include people::dliggat::sublime_text_2
 
 }
