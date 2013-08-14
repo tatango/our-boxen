@@ -1,6 +1,6 @@
-# Plyfe's Boxen
+# Dave Liggat's Boxen
 
-This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Automated Mac provisioning.
+This is Dave Liggat's incarnation of Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Automated Mac provisioning.
 
 ## Getting Started with Boxen at Plyfe:
 *tested on clean OS X 10.8 machine*
