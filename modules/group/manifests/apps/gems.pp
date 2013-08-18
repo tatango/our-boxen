@@ -1,6 +1,6 @@
-class plyfe::apps::gems {
+class group::apps::gems {
 
-  notify { 'class plyfe::apps::gems declared': }
+  notify { 'class group::apps::gems declared': }
 
   ruby::gem {
     "bundler for 1.9.3":

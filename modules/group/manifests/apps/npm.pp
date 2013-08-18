@@ -1,6 +1,6 @@
-class plyfe::apps::npm {
+class group::apps::npm {
 
-  notify { 'class plyfe::apps::npm declared': }
+  notify { 'class group::apps::npm declared': }
 
   nodejs::module {
     'coffee-script':

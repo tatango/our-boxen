@@ -1,5 +1,5 @@
-class plyfe::apps::mac {
-  notify { 'class plyfe::apps::mac declared': }
+class group::apps::mac {
+  notify { 'class group::apps::mac declared': }
 
   include redis
   include textwrangler
