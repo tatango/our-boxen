@@ -16,25 +16,26 @@ class people::dliggat::osx {
   include group::osx::keyboard
   include osx::global::disable_autocorrect
 
+  # Mission Control & Dashboard.
+  include group::osx::missioncontrol
+
+  # Mouse.
+  include group::osx::mouse
+
+  # Safari.
+  include group::osx::safari
+
+  # Screenshots and Display.
+  include group::osx::screen
+
+  # System (general stuff).
+  include group::osx::system
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
 
-  boxen::osx_defaults {
-    'Disable the dashboard':
-      ensure => present,
-      key    => 'mcx-disabled',
-      domain => 'com.apple.dashboard',
-      value  => 'true',
-      type   => 'bool',
-      user   => $::boxen_user;
+  # Textedit.
+  include group::osx::textedit
 
-    'Don’t show Dashboard as a Space':
-      ensure => present,
-      key    => 'dashboard-in-overlay',
-      domain => 'com.apple.dock',
-      value  => 'true',
-      type   => 'bool',
-      user   => $::boxen_user;
-  }
-
+  # Time Machine.
+  include group::osx::timemachine
 }
