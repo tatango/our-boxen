@@ -2,15 +2,17 @@ class people::dliggat::osx {
 
   notify { 'class people::dliggat::osx declared': }
 
+  # Dock.
   include osx::dock::2d
   include osx::dock::dim_hidden_apps
   include group::osx::dock
 
+  # Finder.
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
+  include group::osx::finder
 
-  class { 'osx::global::key_repeat_delay': delay => 10 }
-  class { 'osx::global::key_repeat_rate': rate => 2 }
+  # Keyboard.
 
   include osx::global::disable_autocorrect
   include osx::global::expand_print_dialog
