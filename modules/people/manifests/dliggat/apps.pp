@@ -14,7 +14,6 @@ class people::dliggat::apps {
   include onepassword
   include sequel_pro
   include sublime_text_2
-  include textwrangler
   include transmission
   include vim
   include vlc

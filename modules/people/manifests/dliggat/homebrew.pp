@@ -4,7 +4,6 @@ class people::dliggat::homebrew {
 
   package {
     [
-      'sqlite',
       'tree'
     ]:
   }

@@ -80,7 +80,7 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
-  include plyfe::environment
+  include group::environment
 
   # Symlink from boxen source directory to the boxen repo.
   file { "${boxen::config::srcdir}/our-boxen":
