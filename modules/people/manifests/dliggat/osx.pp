@@ -13,8 +13,9 @@ class people::dliggat::osx {
   include group::osx::finder
 
   # Keyboard.
-
+  include group::osx::keyboard
   include osx::global::disable_autocorrect
+
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
 

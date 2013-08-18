@@ -1,5 +1,7 @@
 class group::osx::finder {
 
+  notify { 'class group::osx::finder declared': }
+
   boxen::osx_defaults {
     'Show all filename extensions':
       ensure => present,
