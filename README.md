@@ -21,7 +21,7 @@ This is Dave Liggat's incarnation of [Plyfe](https://github.com/plyfe/our-boxen)
 ```bash
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
-git clone https://github.com/plyfe/our-boxen.git /opt/boxen/repo
+git clone https://github.com/dliggat/boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 ```
 
