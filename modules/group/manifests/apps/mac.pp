@@ -2,7 +2,6 @@ class group::apps::mac {
   notify { 'class group::apps::mac declared': }
 
   include redis
-  include textwrangler
 
   # TODO: Migrate this into a puppet module if it works.
   package { 'Hall':

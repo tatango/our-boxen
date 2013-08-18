@@ -149,11 +149,6 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-textwrangler
-  specs:
-    textwrangler (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-tower
   specs:
     tower (1.0.0)
@@ -242,7 +237,6 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
-  textwrangler (= 1.0.1)
   tower (= 1.0.0)
   transmission (= 1.0.0)
   vim (= 1.0.2)
