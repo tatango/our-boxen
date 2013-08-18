@@ -4,6 +4,7 @@ class people::dliggat::osx {
 
   include osx::dock::2d
   include osx::dock::dim_hidden_apps
+  include group::osx::dock
 
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
