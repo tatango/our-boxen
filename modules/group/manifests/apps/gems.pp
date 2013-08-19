@@ -8,6 +8,11 @@ class group::apps::gems {
       ruby    => '1.9.3',
       version => '~> 1.3.5';
 
+    "bundler for 2.0.0":
+      gem     => 'bundler',
+      ruby    => '2.0.0',
+      version => '~> 1.3.5';
+
     "rails for 1.9.3":
       gem     => 'rails',
       ruby    => '1.9.3',
