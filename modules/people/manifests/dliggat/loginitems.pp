@@ -23,6 +23,11 @@ class people::dliggat::loginitems {
       path    => '/Applications/Fantastical.app',
       hidden  => true;
 
+   'Mail':
+      name    => 'Mail',
+      path    => '/Applications/Mail.app',
+      hidden  => true;
+
     'Moom':
       name    => 'Moom',
       path    => '/Applications/Moom.app',
