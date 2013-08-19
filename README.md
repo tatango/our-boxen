@@ -39,6 +39,11 @@ The machine's Plyfe boxen provisioning is now complete. Apps (Chrome, Dropbox, e
 5. Run the unit test suite: `bundle exec guard`. After the batch of javascript tests visibly completes, enter `rspec all` to run the ruby tests. `Ctrl-C` to exit.
 6. Finally, run the app itself: `script/thinserver` and when it loads, visit https://development.plyfe.me:3001
 
+### Merging in plyfe/our-boxen commits
+1. Do this once: `git remote add plyfe-boxen https://github.com/plyfe/our-boxen.git`
+2. Fetch commits: `git fetch plyfe-boxen`
+3. Merge commits: `git merge plyfe-boxen/master`
+
 ### All Other Instructions
 
 See https://github.com/boxen and https://boxen.github.com for further details on modules and so on.
