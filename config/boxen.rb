@@ -24,6 +24,6 @@
 # required for Github Enterprise (defaults to "https://github.com/%s")
 # ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
 
-ENV["CODE"]          = "/Users/#{`whoami`.strip}/code"     # Top level code directory.
-`mkdir -p #{ENV["CODE"]}`  # A bit of a hack to ensure BOXEN_SRC_DIR's parent exists. Difficult to guarantee in Boxen.
-ENV["BOXEN_SRC_DIR"] = [ ENV['CODE'], 'boxen-repos' ].join('/')  # Boxen's own git repos.
+code_dir             = "/Users/#{`whoami`.strip}/code"     # Top level code directory.
+`mkdir -p #{code_dir}`  # A bit of a hack to ensure BOXEN_SRC_DIR's parent exists. Difficult to guarantee in Boxen.
+ENV["BOXEN_SRC_DIR"] = [ code_dir, 'boxen' ].join('/')  # Boxen's own git repos.
