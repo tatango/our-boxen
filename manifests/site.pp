@@ -83,7 +83,7 @@ node default {
   include group::environment
 
   # Symlink from boxen source directory to the boxen repo.
-  file { "${boxen::config::srcdir}/our-boxen":
+  file { "${boxen::config::srcdir}/dliggat-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
