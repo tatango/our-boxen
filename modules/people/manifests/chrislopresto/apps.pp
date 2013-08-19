@@ -15,6 +15,7 @@ class people::chrislopresto::apps {
   include onepassword
   include rdio
   include sequel_pro
+  include sublime_text_2
   include tower
   include transmission
   include vim
