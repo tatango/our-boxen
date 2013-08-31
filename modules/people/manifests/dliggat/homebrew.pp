@@ -4,6 +4,7 @@ class people::dliggat::homebrew {
 
   package {
     [
+      'pwgen',
       'tree'
     ]:
   }
