@@ -17,5 +17,9 @@ class people::dliggat::symlinks {
     target  => "/Users/${::luser}/Dropbox/DocumentSync"
   }
 
+  file { "/Users/${::luser}/git":
+    ensure  => link,
+    target  => "${::boxen_srcdir}"
+  }
 
 }
