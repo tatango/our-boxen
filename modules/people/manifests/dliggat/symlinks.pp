@@ -12,12 +12,12 @@ class people::dliggat::symlinks {
     target  => "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
   }
 
-  file { "/Users/${::luser}/Documents/DocumentSync":
+  file { "/Users/${::boxen_user}/Documents/DocumentSync":
     ensure  => link,
-    target  => "/Users/${::luser}/Dropbox/DocumentSync"
+    target  => "/Users/${::boxen_user}/Dropbox/DocumentSync"
   }
 
-  file { "/Users/${::luser}/git":
+  file { "/Users/${::boxen_user}/git":
     ensure  => link,
     target  => "${::boxen_srcdir}"
   }

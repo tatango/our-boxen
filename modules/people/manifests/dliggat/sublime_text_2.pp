@@ -2,7 +2,7 @@ class people::dliggat::sublime_text_2 {
 
   notify { 'class people::dliggat::sublime_text_2 declared': }
 
-  $base = "/Users/${::luser}/Library/Application Support"
+  $base = "/Users/${::boxen_user}/Library/Application Support"
 
   exec { 'Idempotent creation of User preferences directory':
     command => "mkdir -p '${base}/Sublime Text 2/Packages/User'"

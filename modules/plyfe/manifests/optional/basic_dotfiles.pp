@@ -2,7 +2,7 @@ class plyfe::optional::basic_dotfiles {
 
   notify { 'class plyfe::optional::basic_dotfiles declared': }
 
-  $my_homedir   = "/Users/${::luser}"
+  $my_homedir   = "/Users/${::boxen_user}"
 
   # Bring in dotfile repo and define symbolic links to the appropriate files.
   repository {
