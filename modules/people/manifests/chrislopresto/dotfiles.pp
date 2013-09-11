@@ -8,7 +8,7 @@ class people::chrislopresto::dotfiles {
       path     => "${::boxen_srcdir}/dotfiles";
   }
 
-  $homedir = "/Users/${::luser}"
+  $homedir = "/Users/${::boxen_user}"
 
   file { "${homedir}/.gvimrc":
     ensure  => link,
