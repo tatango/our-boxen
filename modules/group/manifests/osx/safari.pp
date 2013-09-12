@@ -3,13 +3,6 @@ class group::osx::safari {
   notify { 'class group::osx::safari declared': }
 
   boxen::osx_defaults {
-    'Set Safari’s home page to `about:blank` for faster loading':
-      ensure => present,
-      key    => 'HomePage',
-      domain => 'com.apple.Safari',
-      value  => 'about:blank',
-      type   => 'string',
-      user   => $::boxen_user;
 
     'Prevent Safari from opening files automatically after downloading':
       ensure => present,
