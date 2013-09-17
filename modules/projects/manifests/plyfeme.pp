@@ -13,6 +13,7 @@ class projects::plyfeme {
   # Homebrew packages for the project.
   package {
     [
+      # 'ec2-api-tools',   # Needed for chef stuff eventually.
       'casperjs',
       'imagemagick',
       'qt',
@@ -34,6 +35,9 @@ class projects::plyfeme {
     ip => "127.0.0.1",
   }
   host { "development-qb.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "embed-development.plyfe.me":
     ip => "127.0.0.1",
   }
 
