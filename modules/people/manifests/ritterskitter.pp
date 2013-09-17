@@ -5,7 +5,7 @@ class people::ritterskitter {
   # Git global settings.
   git::config::global {
     'user.name':        value => 'Angela Fagg';
-    'user.email':       value => 'a.mariefagg@gmail.com';
+    'user.email':       value => 'angela@plyfe.me';
     'core.editor':      value => 'vim';
     'color.ui':         value => 'true';
 
