@@ -10,6 +10,11 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 2. Someone has 'onboarded' you to the plyfe/our-boxen repository and has created a `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` personal manifest file. See @dliggat or @chrislopresto for more info.
 
 ### Steps
+0. Format machine to a clean install of OS X 10.8 Mountain Lion
+  * **Important**: Backup all important data and settings with liberal use of Dropbox and Time Machine
+  * Reboot machine, insert bootable USB drive with OS X installer, and hold the `Option` key
+  * Use the USB drive's disk utility to erase Macintosh HD
+  * Install OS X onto the newly-erased Macintosh HD
 1. Install Xcode from the Mac App Store.
 2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
 3. In that same Download window, install the iOS Simulator for the current and previous version *(as of the time of writing on 2013-07-31, that would be iOS6 and iOS5.1)*.
