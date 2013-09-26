@@ -10,14 +10,16 @@ This is Dave Liggat's incarnation of [Plyfe](https://github.com/plyfe/our-boxen)
 2. You have a `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` personal manifest file in the dliggat/boxen repository.
 
 ### Steps
-1. Format machine by rebooting and holding Cmd-R.
-2. Erase internal Macintosh HD disk.
-3. Install OS X.
-4. Sign into Apple ID account (for App Store, etc), and then in my case, separately, sign into iCloud.
-5. Install Xcode from the Mac App Store.
-6. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
-7. Turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (9) to remove the check.
-8. Open Terminal.app and do the following:
+0. Format machine to a clean install of OS X 10.8 Mountain Lion
+  * **Important**: Backup all important data and settings with liberal use of Dropbox and Time Machine
+  * Reboot machine, insert bootable USB drive with OS X installer, and hold the `Option` key
+  * Use the USB drive's disk utility to erase Macintosh HD
+  * Install OS X onto the newly-erased Macintosh HD
+1. Install Xcode from the Mac App Store.
+2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
+3. In that same Download window, install the iOS Simulator for the current and previous version *(as of the time of writing on 2013-07-31, that would be iOS6 and iOS5.1)*.
+4. If this is a new machine, turn on FileVault in System Preferences. Alternatively, add `--no-fde` to step (6) to remove the check.
+5. Open Terminal.app and do the following:
 ```bash
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
