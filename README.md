@@ -37,7 +37,7 @@ cd /opt/boxen/repo
 The machine's Plyfe boxen provisioning is now complete. Apps (Chrome, Dropbox, etc), Rubies (1.8.7, 1.9.3 - default, and 2.0.0), and Homebrew packages (heroku-toolbelt, pidof, etc) have been automatically installed. Further custom tweaks can be added and scripted automatically by editing your personal .pp manifest file (established in Prerequisite #2).
 
 ## Initial Setup for the Plyfeme Project:
-1. Run `cd ~/src/plyfe/plyfeme`.
+1. Run `cd ~/code/boxen/plyfeme`.
 2. Run `mysql -u root < db/init_dev_user.sql` (Initializes the local development database user account)
 3. Run `bundle install`.
 4. Run `bundle exec rake db:drop db:create db:migrate db:seed db:test:prepare`.
