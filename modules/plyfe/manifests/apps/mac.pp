@@ -2,7 +2,6 @@ class plyfe::apps::mac {
   notify { 'class plyfe::apps::mac declared': }
 
   include chrome
-  include dropbox
   include firefox
   include gitx
   include heroku
