@@ -8,6 +8,7 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 ### Prerequisites
 1. You have a GitHub account, and have been added to the plyfe organization.
 2. Someone has 'onboarded' you to the plyfe/our-boxen repository and has created a `modules/people/manifests/$YOUR_GITHUB_HANDLE.pp` personal manifest file. See @dliggat or @chrislopresto for more info.
+3. You have a **public** name and email address associated with your GitHub account. If you don't, the installer will bomb. See this [issue](https://github.com/boxen/boxen/issues/111) for more details.
 
 ### Steps
 0. Format machine to a clean install of OS X 10.8 Mountain Lion
