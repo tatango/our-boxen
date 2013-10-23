@@ -43,10 +43,6 @@ class people::dliggat::loginitems {
       path    => '/Applications/Moom.app',
       hidden  => false;
 
-    'DeskConnect':
-      name    => 'DeskConnect',
-      path    => '/Applications/DeskConnect.app',
-      hidden  => false;
   }
 
 }
