@@ -63,14 +63,6 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  # Adding this to get around Mavericks mysql issue.
-  package { 'mysql':
-    ensure => present,
-    install_options => [
-      '--build-from-source'
-    ]
-  }
-
   # node versions
   class { 'nodejs::global':
     version => 'v0.10'
