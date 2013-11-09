@@ -16,7 +16,7 @@ class projects::plyfeme {
       # 'ec2-api-tools',   # Needed for chef stuff eventually.
       'casperjs',
       'imagemagick',
-      'qt',
+      'qt5',
       's3cmd'
     ]:
   }
