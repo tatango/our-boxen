@@ -16,8 +16,8 @@ class projects::plyfeme {
       # 'ec2-api-tools',   # Needed for chef stuff eventually.
       'casperjs',
       'imagemagick',
-      'qt5',
       's3cmd'
+      # 'qt',  # Broken on Mavericks. Install manually with `brew install https://raw.github.com/cliffrowley/homebrew/patched_qt_libcpp/Library/Formula/qt.rb --HEAD` for now.
     ]:
   }
 
