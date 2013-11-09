@@ -4,5 +4,4 @@ class plyfe::dev_environment {
   include plyfe::apps::gems
   include plyfe::apps::npm
 
-  include projects::all
 }

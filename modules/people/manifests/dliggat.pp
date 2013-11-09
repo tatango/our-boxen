@@ -11,6 +11,7 @@ class people::dliggat {
   include people::dliggat::osx
   include people::dliggat::sublime_text_2
 
-  include projects::all
   include plyfe::dev_environment
+
+  include projects::all
 }
