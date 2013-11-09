@@ -11,4 +11,5 @@ class people::chrislopresto {
   include people::chrislopresto::osx
   include people::chrislopresto::sublime_text_2
 
+  include plyfe::dev_environment
 }
