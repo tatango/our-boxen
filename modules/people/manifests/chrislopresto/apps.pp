@@ -16,6 +16,5 @@ class people::chrislopresto::apps {
   include transmission
   include vim
   include wget
-  include zsh
 
 }
