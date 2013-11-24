@@ -78,7 +78,7 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
-  include plyfe::apps::mac
+  # include plyfe::apps::mac
 
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
