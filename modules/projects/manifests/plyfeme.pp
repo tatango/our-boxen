@@ -18,8 +18,8 @@ class projects::plyfeme {
       'imagemagick',
       's3cmd',
       'libxslt',
-      'libxml2'
-      # 'qt',  # Broken on Mavericks. Install manually with `brew install https://raw.github.com/cliffrowley/homebrew/patched_qt_libcpp/Library/Formula/qt.rb --HEAD` for now.
+      'libxml2',
+      'qt'
     ]:
   }
 
