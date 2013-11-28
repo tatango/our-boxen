@@ -70,9 +70,9 @@ node default {
   include nodejs::v0_8_8
   include nodejs::v0_10
 
-  # default ruby versions
+  # default ruby version.
   class { 'ruby::global':
-    version => '1.9.3'
+    version => '2.0.0'
   }
   include ruby::1_8_7
   include ruby::1_9_3
