@@ -5,6 +5,7 @@ class people::dliggat::homebrew {
   package {
     [
       'exiftool',
+      'imagemagick',
       'pwgen',
       'tree'
     ]:
