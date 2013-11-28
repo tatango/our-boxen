@@ -6,9 +6,6 @@ class plyfe::apps::npm {
     'coffee-script':
       node_version => 'v0.10';
 
-    'coffeelint':
-      node_version => 'v0.10';
-
     'jshint':
       node_version => 'v0.10';
   }
