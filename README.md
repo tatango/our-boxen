@@ -1,9 +1,9 @@
-# Dave Liggat's Boxen
+# Plyfe's Boxen
 
-This is Dave Liggat's incarnation of [Plyfe](https://github.com/plyfe/our-boxen)'s incarnation of [GitHub's Boxen](https://boxen.github.com). Automated Mac provisioning.
+This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Automated Mac provisioning.
 
-## My steps for Boxenizing my machines:
-*tested on clean OS X 10.8 machine*
+## Getting Started with Boxen at Plyfe:
+*tested on clean OS X 10.9 machine*
 
 ### Prerequisites
 1. You have a GitHub account, and have been added to the plyfe organization.
@@ -27,7 +27,7 @@ This is Dave Liggat's incarnation of [Plyfe](https://github.com/plyfe/our-boxen)
 ```bash
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
-git clone https://github.com/dliggat/boxen.git /opt/boxen/repo
+git clone https://github.com/plyfe/our-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 ```
 
@@ -45,13 +45,6 @@ The machine's Plyfe boxen provisioning is now complete. Apps (Chrome, Dropbox, e
 5. Run the unit test suite: `bundle exec guard`. After the batch of javascript tests visibly completes, enter `rspec all` to run the ruby tests. `Ctrl-C` to exit.
 6. Finally, run the app itself: `script/thinserver` and when it loads, visit https://development.plyfe.me:3001
 
-### Merging in plyfe/our-boxen commits
-1. Do this once: `git remote add plyfe-boxen https://github.com/plyfe/our-boxen.git`
-2. Fetch commits: `git fetch plyfe-boxen`
-3. Merge commits: `git merge plyfe-boxen/master`
-
-### All Other Instructions
-=======
 ## FAQ
 
 ### Q: How do you update a module?
@@ -65,4 +58,6 @@ If that still fails, you may be running into a GitHub rate limiting issue. This 
 
 ## Other Documentation/FAQ
 plyfe/our-boxen is a fork of [boxen/our-boxen](https://github.com/boxen/our-boxen) - Substantial other documentation is available there.
+
+
 
