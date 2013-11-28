@@ -80,6 +80,7 @@ node default {
 
   #include group::environment
   #include plyfe::apps::mac
+  # include plyfe::apps::mac
 
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog

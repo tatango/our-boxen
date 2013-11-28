@@ -5,8 +5,7 @@ class people::chrislopresto::homebrew {
   package {
     [
       'sqlite',
-      'tree',
-      'z'
+      'tree'
     ]:
   }
 
