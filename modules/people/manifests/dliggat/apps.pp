@@ -10,7 +10,7 @@ class people::dliggat::apps {
   include sequel_pro
   # include sublime_text_2
   # include transmission
-  include vim
+  # include vim
   # include vlc
   # include vmware_fusion
   # include wget
