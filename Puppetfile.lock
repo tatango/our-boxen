@@ -9,29 +9,9 @@ GITHUBTARBALL
     boxen (3.3.4)
 
 GITHUBTARBALL
-  remote: boxen/puppet-charles
-  specs:
-    charles (1.0.2)
-
-GITHUBTARBALL
-  remote: boxen/puppet-chrome
-  specs:
-    chrome (1.1.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-dropbox
-  specs:
-    dropbox (1.1.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-firefox
-  specs:
-    firefox (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -114,11 +94,6 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-osx
-  specs:
-    osx (1.5.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (2.0.2)
@@ -127,11 +102,6 @@ GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-rdio
-  specs:
-    rdio (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-redis
@@ -154,11 +124,6 @@ GITHUBTARBALL
     sequel_pro (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-sourcetree
-  specs:
-    sourcetree (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
   specs:
     sublime_text_2 (1.1.2)
@@ -167,26 +132,6 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-tower
-  specs:
-    tower (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-transmission
-  specs:
-    transmission (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vim
-  specs:
-    vim (1.0.2)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vlc
-  specs:
-    vlc (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
@@ -204,16 +149,6 @@ GITHUBTARBALL
     xquartz (1.1.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-zsh
-  specs:
-    zsh (1.0.0)
-
-GITHUBTARBALL
-  remote: glarizza/puppet-property_list_key
-  specs:
-    property_list_key (0.1.0)
-
-GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -226,11 +161,7 @@ GITHUBTARBALL
 DEPENDENCIES
   alfred (= 1.1.2)
   boxen (= 3.3.4)
-  charles (= 1.0.2)
-  chrome (= 1.1.1)
   dnsmasq (= 1.0.0)
-  dropbox (= 1.1.1)
-  firefox (= 1.1.1)
   foreman (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
@@ -248,26 +179,16 @@ DEPENDENCIES
   nodejs (= 3.3.0)
   onepassword (= 1.0.1)
   openssl (= 1.0.0)
-  osx (= 1.5.0)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
-  property_list_key (= 0.1.0)
-  rdio (= 1.0.0)
   redis (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.7.2)
   sequel_pro (= 1.0.0)
-  sourcetree (= 1.0.0)
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
-  tower (= 1.0.0)
-  transmission (= 1.0.0)
-  vim (= 1.0.2)
-  vlc (= 1.0.0)
   vmware_fusion (= 1.0.0)
   wget (= 1.0.0)
   xquartz (= 1.1.1)
-  xquartz (= 1.1.1)
-  zsh (= 1.0.0)
 
