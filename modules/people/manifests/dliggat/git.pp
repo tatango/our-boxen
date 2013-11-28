@@ -9,11 +9,13 @@ class people::dliggat::git {
     'color.ui':      value => 'true';
 
     'alias.b':       value => 'branch';
+    'alias.ch':      value => 'checkout';
     'alias.cm':      value => 'checkout master';
     'alias.co':      value => 'commit';
     'alias.s':       value => 'status -sb';
+    'alias.l1':      value => 'log --oneline -n 10';
     'alias.pom':     value => 'push -u origin master';
-    'alias.pos':     value => 'push -u origin source';
+    'alias.w':       value => 'browse';
   }
 
 }
