@@ -8,6 +8,12 @@ class projects::plyfe_preview {
     source        => 'plyfe/plyfe-preview',
   }
 
+  package {
+    [
+      'postgresql'
+    ]:
+  }
+
   host { "preview-development.plyfe.me":
     ip => "127.0.0.1",
   }

@@ -4,7 +4,7 @@ class people::chrislopresto::dotfiles {
 
   repository {
     "dotfiles":
-      source   => 'chrislopresto/dotfiles',
+      source   => 'dliggat/dotfiles',
       path     => "${::boxen_srcdir}/dotfiles";
   }
 
@@ -22,15 +22,27 @@ class people::chrislopresto::dotfiles {
     require => Repository["dotfiles"],
   }
 
-  file { "${homedir}/.zshrc":
+  file { "${homedir}/.bash_profile":
     ensure  => link,
-    target  => "${::boxen_srcdir}/dotfiles/zshrc",
+    target  => "${::boxen_srcdir}/dotfiles/bash_profile",
+    require => Repository["dotfiles"],
+  }
+
+  file { "${homedir}/.bashrc":
+    ensure  => link,
+    target  => "${::boxen_srcdir}/dotfiles/bashrc",
     require => Repository["dotfiles"],
   }
 
   file { "${homedir}/.gitignore":
     ensure  => link,
     target  => "${::boxen_srcdir}/dotfiles/gitignore",
+    require => Repository["dotfiles"],
+  }
+
+  file { "${homedir}/.synergy.conf":
+    ensure  => link,
+    target  => "${::boxen_srcdir}/dotfiles/synergy.conf",
     require => Repository["dotfiles"],
   }
 

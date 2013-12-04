@@ -4,7 +4,8 @@ class people::dliggat::homebrew {
 
   package {
     [
-      'sqlite',
+      'exiftool',
+      'pwgen',
       'tree'
     ]:
   }

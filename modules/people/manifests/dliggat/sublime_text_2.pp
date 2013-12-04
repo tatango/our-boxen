@@ -2,6 +2,8 @@ class people::dliggat::sublime_text_2 {
 
   notify { 'class people::dliggat::sublime_text_2 declared': }
 
+  include sublime_text_2
+
   $base = "/Users/${::boxen_user}/Library/Application Support"
 
   exec { 'Idempotent creation of User preferences directory':

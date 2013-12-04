@@ -16,8 +16,10 @@ class projects::plyfeme {
       # 'ec2-api-tools',   # Needed for chef stuff eventually.
       'casperjs',
       'imagemagick',
-      'qt',
-      's3cmd'
+      's3cmd',
+      'libxslt',
+      'libxml2',
+      'qt'
     ]:
   }
 

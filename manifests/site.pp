@@ -67,23 +67,24 @@ node default {
   class { 'nodejs::global':
     version => 'v0.10'
   }
-  include nodejs::v0_4
-  include nodejs::v0_6
-  include nodejs::v0_8
+  include nodejs::v0_8_8
+  include nodejs::v0_10
 
-  # default ruby versions
+  # default ruby version.
   class { 'ruby::global':
-    version => '1.9.3'
+    version => '2.0.0'
   }
   include ruby::1_8_7
-  include ruby::1_9_2
   include ruby::1_9_3
   include ruby::2_0_0
 
-  include plyfe::environment
+  # include plyfe::apps::mac
+
+  # include osx::global::expand_print_dialog
+  # include osx::global::expand_save_dialog
 
   # Symlink from boxen source directory to the boxen repo.
-  file { "${boxen::config::srcdir}/our-boxen":
+  file { "${boxen::config::srcdir}/dliggat-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
