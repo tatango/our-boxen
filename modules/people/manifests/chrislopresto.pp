@@ -9,7 +9,5 @@ class people::chrislopresto {
   include people::chrislopresto::sublime_text_2
   include people::chrislopresto::symlinks
 
-  include plyfe::dev_environment
-
   include projects::all
 }
