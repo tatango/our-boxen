@@ -34,6 +34,12 @@ class people::chrislopresto::dotfiles {
     require => Repository["dotfiles"],
   }
 
+  file { "${homedir}/.zshrc":
+    ensure  => link,
+    target  => "${::boxen_srcdir}/dotfiles/zshrc",
+    require => Repository["dotfiles"],
+  }
+
   file { "${homedir}/.gitignore":
     ensure  => link,
     target  => "${::boxen_srcdir}/dotfiles/gitignore",
