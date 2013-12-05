@@ -58,12 +58,6 @@ class people::chrislopresto::dotfiles {
     require => Repository["dotfiles"],
   }
 
-  file { "${homedir}/Library/Preferences/com.googlecode.iterm2.plist":
-    ensure  => link,
-    target  => "${::boxen_srcdir}/dotfiles/plists/com.googlecode.iterm2.plist",
-    require => Repository["dotfiles"],
-  }
-
   file { "${homedir}/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist":
     ensure  => link,
     target  => "${::boxen_srcdir}/dotfiles/plists/com.runningwithcrayons.Alfred-Preferences.plist",
