@@ -4,7 +4,7 @@ class people::chrislopresto::dotfiles {
 
   repository {
     "dotfiles":
-      source   => 'dliggat/dotfiles',
+      source   => 'chrislopresto/dotfiles',
       path     => "${::boxen_srcdir}/dotfiles";
   }
 
