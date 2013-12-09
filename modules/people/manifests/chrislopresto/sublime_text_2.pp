@@ -61,8 +61,8 @@ class people::chrislopresto::sublime_text_2 {
   sublime_text_2::package { 'Theme - Soda':
     source => 'buymeasoda/soda-theme'
   }
-  sublime_text_2::package { 'Color Scheme - Solarized':
-    source => 'altercation/solarized'
+  sublime_text_2::package { 'Solarized Color Scheme':
+    source => 'SublimeColors/Solarized'
   }
 
 }
