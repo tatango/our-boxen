@@ -42,6 +42,9 @@ class projects::plyfeme {
   host { "embed-development.plyfe.me":
     ip => "127.0.0.1",
   }
+  host { "platform-development.plyfe.me":
+    ip => "127.0.0.1",
+  }
 
   # Create the project tmp directory (used for JasmineHeadlessWebkit and not in the git repo).
   file { "${boxen::config::srcdir}/plyfeme/tmp":
