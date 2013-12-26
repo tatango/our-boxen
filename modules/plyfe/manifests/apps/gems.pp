@@ -32,6 +32,11 @@ class plyfe::apps::gems {
       gem     => 'debugger',
       ruby    => '1.9.3',
       version => '~> 1.6.1';
+
+    "jekyll for 1.9.3":
+      gem     => 'jekyll',
+      ruby    => '1.9.3',
+      version => '~> 1.4.2';
   }
 
 }
