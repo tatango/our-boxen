@@ -8,6 +8,12 @@ class plyfe::apps::npm {
 
     'jshint':
       node_version => 'v0.10';
+
+    'hubot':
+      node_version => 'v0.10';
+
+    'hubot-slack':
+      node_version => 'v0.10';
   }
 
 }
