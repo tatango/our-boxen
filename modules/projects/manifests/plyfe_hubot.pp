@@ -10,6 +10,14 @@ class projects::plyfe_hubot {
     source        => 'plyfe/plyfe-hubot',
   }
 
+  nodejs::module {
+    'hubot':
+      node_version => 'v0.10';
+
+    'hubot-slack':
+      node_version => 'v0.10';
+  }
+
   # Homebrew packages for the project.
   package {
     [
