@@ -70,5 +70,11 @@ class people::chrislopresto::sublime_text_2 {
   sublime_text_2::package { 'Emblem':
     source => 'bosgood/emblem-sublimetext'
   }
+  sublime_text_2::package { 'Ruby on Rails snippets':
+    source => 'tadast/sublime-rails-snippets'
+  }
+  sublime_text_2::package { 'JavaScript Snippets':
+    source => 'jprichardson/sublime-js-snippets'
+  }
 
 }
