@@ -23,6 +23,8 @@ class projects::plyfeme {
     ]:
   }
 
+  include foreman
+
   # Hosts file entries for the project.
   host { "development.plyfe.me":
     ip => "127.0.0.1",

@@ -16,7 +16,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
-    foreman (1.0.0)
+    foreman (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -172,7 +172,7 @@ DEPENDENCIES
   alfred (= 1.1.2)
   boxen (= 3.3.4)
   dnsmasq (= 1.0.0)
-  foreman (= 1.0.0)
+  foreman (= 1.1.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
   gitx (= 1.2.0)

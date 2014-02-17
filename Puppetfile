@@ -35,7 +35,7 @@ github "boxen", "3.3.4"
 # some/most of these if you want, but it's not recommended.
 
 github "dnsmasq",    "1.0.0"
-github "foreman",    "1.0.0"
+github "foreman",    "1.1.0"
 github "gcc",        "2.0.1"
 github "git",        "1.2.5"
 github "go",         "1.0.0"
