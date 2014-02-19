@@ -14,11 +14,26 @@ class projects::plyfeme {
   package {
     [
       # 'ec2-api-tools',   # Needed for chef stuff eventually.
-      'casperjs',
       'imagemagick',
       'qt',
       's3cmd'
     ]:
+  }
+
+  # TODO: Remove casperjs/phantomjs ensure => absent
+  package { 'casperjs':
+    ensure => absent
+  }
+  package { 'phantomjs':
+    ensure => absent
+  }
+
+  nodejs::module {
+    'phantomjs@1.9.7-1':
+      node_version => 'v0.10';
+
+    'casperjs@1.1.0-beta3':
+      node_version => 'v0.10';
   }
 
   # Hosts file entries for the project.
