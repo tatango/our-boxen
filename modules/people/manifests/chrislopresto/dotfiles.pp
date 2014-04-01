@@ -4,7 +4,7 @@ class people::chrislopresto::dotfiles {
 
   repository {
     "dotfiles":
-      source   => 'dliggat/dotfiles',
+      source   => 'chrislopresto/dotfiles',
       path     => "${::boxen_srcdir}/dotfiles";
   }
 
@@ -34,6 +34,12 @@ class people::chrislopresto::dotfiles {
     require => Repository["dotfiles"],
   }
 
+  file { "${homedir}/.zshrc":
+    ensure  => link,
+    target  => "${::boxen_srcdir}/dotfiles/zshrc",
+    require => Repository["dotfiles"],
+  }
+
   file { "${homedir}/.gitignore":
     ensure  => link,
     target  => "${::boxen_srcdir}/dotfiles/gitignore",
@@ -49,12 +55,6 @@ class people::chrislopresto::dotfiles {
   file { "${homedir}/Library/Preferences/com.manytricks.Moom.plist":
     ensure  => link,
     target  => "${::boxen_srcdir}/dotfiles/plists/com.manytricks.Moom.plist",
-    require => Repository["dotfiles"],
-  }
-
-  file { "${homedir}/Library/Preferences/com.googlecode.iterm2.plist":
-    ensure  => link,
-    target  => "${::boxen_srcdir}/dotfiles/plists/com.googlecode.iterm2.plist",
     require => Repository["dotfiles"],
   }
 

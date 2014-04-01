@@ -10,4 +10,9 @@ class projects::denny {
     source        => 'plyfe/denny',
   }
 
+  # Hosts file entries for the project.
+  host { "denny-development.plyfe.me":
+    ip => "127.0.0.1",
+  }
+
 }

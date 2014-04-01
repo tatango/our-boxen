@@ -27,4 +27,6 @@ class people::mfamilia {
   # Define the basic dotfiles - engineers will probably want to skip this step and point to their
   #  own personal dotfile repos.
   include plyfe::optional::basic_dotfiles
+
+  include plyfe::dev_environment
 }

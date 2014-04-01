@@ -61,8 +61,20 @@ class people::chrislopresto::sublime_text_2 {
   sublime_text_2::package { 'Theme - Soda':
     source => 'buymeasoda/soda-theme'
   }
-  sublime_text_2::package { 'Color Scheme - Solarized':
-    source => 'altercation/solarized'
+  sublime_text_2::package { 'Solarized Color Scheme':
+    source => 'SublimeColors/Solarized'
+  }
+  sublime_text_2::package { 'Ruby Slim':
+    source => 'slim-template/ruby-slim.tmbundle'
+  }
+  sublime_text_2::package { 'Emblem':
+    source => 'bosgood/emblem-sublimetext'
+  }
+  sublime_text_2::package { 'Ruby on Rails snippets':
+    source => 'tadast/sublime-rails-snippets'
+  }
+  sublime_text_2::package { 'JavaScript Snippets':
+    source => 'jprichardson/sublime-js-snippets'
   }
 
 }

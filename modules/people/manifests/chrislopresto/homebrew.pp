@@ -5,6 +5,7 @@ class people::chrislopresto::homebrew {
   package {
     [
       'exiftool',
+      'gdbm',
       'pwgen',
       'sqlite',
       'tree'

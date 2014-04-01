@@ -10,13 +10,17 @@ class projects::plyfeme {
     source        => 'plyfe/plyfeme',
   }
 
+  include foreman
+
   # Homebrew packages for the project.
   package {
     [
       # 'ec2-api-tools',   # Needed for chef stuff eventually.
       'imagemagick',
-      'qt',
-      's3cmd'
+      's3cmd',
+      'libxslt',
+      'libxml2',
+      'qt'
     ]:
   }
 
@@ -53,6 +57,9 @@ class projects::plyfeme {
     ip => "127.0.0.1",
   }
   host { "embed-development.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "platform-development.plyfe.me":
     ip => "127.0.0.1",
   }
 

@@ -20,7 +20,7 @@ This is Plyfe's incarnation of [GitHub's Boxen](https://boxen.github.com). Autom
 2. Open Xcode -> Preferences -> Downloads -> Install Command Line Tools.
 3. In that same Download window, install the iOS Simulator for the current and previous version *(as of the time of writing on 2013-07-31, that would be iOS6 and iOS5.1)*.
 4. Boxen checks and verifies that FileVault, OS X's full-disk encryption, is turned on.
-  * In the case of a laptop, it's probably a good idea. You can turn on FileVault in OS X's 'Security and Privacy' System Preferences pane. Be aware that this may take several hours to enable - so this should be done overnight preferrably. 
+  * In the case of a laptop, it's probably a good idea. You can turn on FileVault in OS X's 'Security and Privacy' System Preferences pane. Be aware that this may take several hours to enable - so this should be done overnight preferrably.
   * In the case of a shared machine (e.g. Mac Mini), it's probably not worth the effort.
   * If you don't want Boxen to complain about the lack of FileVault, add `--no-fde` to step (7) to remove the check.
 5. Open Terminal.app and do the following:

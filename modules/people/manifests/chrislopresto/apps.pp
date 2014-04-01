@@ -4,5 +4,7 @@ class people::chrislopresto::apps {
 
   include iterm2::stable
   include sequel_pro
+  include zsh
+  include heroku
 
 }
