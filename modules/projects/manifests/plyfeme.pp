@@ -34,6 +34,9 @@ class projects::plyfeme {
 
     'casperjs@1.1.0-beta3':
       node_version => 'v0.10';
+
+    'bower':
+      node_version => 'v0.10';
   }
 
   # Hosts file entries for the project.
