@@ -5,7 +5,7 @@ class projects::plyfeme {
   boxen::project { 'plyfeme':
     mysql         => true,
     redis         => true,
-    ruby          => '1.9.3',
+    ruby          => '1.9.3-p545',
     dir           => "${boxen::config::srcdir}/plyfeme",
     source        => 'plyfe/plyfeme',
   }
