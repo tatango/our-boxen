@@ -77,6 +77,7 @@ node default {
   }
   ruby::version { '1.8.7': }
   ruby::version { '1.9.3-p545': }
+  ruby::version { '2.1.1': }
 
   # include plyfe::apps::mac
 
