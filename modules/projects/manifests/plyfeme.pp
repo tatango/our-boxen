@@ -47,16 +47,13 @@ class projects::plyfeme {
   host { "development.plyfe.me":
     ip => "127.0.0.1",
   }
-  host { "en.development.plyfe.me":
-    ip => "127.0.0.1",
-  }
-  host { "es.development.plyfe.me":
-    ip => "127.0.0.1",
-  }
   host { "development-rds.plyfe.me":
     ip => "127.0.0.1",
   }
   host { "development-qb.plyfe.me":
+    ip => "127.0.0.1",
+  }
+  host { "vagrant.plyfe.me":
     ip => "127.0.0.1",
   }
   host { "embed-development.plyfe.me":
