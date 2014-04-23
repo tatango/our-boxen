@@ -76,5 +76,8 @@ class people::chrislopresto::sublime_text_2 {
   sublime_text_2::package { 'JavaScript Snippets':
     source => 'jprichardson/sublime-js-snippets'
   }
+  sublime_text_2::package { 'MaxPane':
+    source => 'jisaacks/MaxPane'
+  }
 
 }
