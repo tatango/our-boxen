@@ -7,4 +7,9 @@ class projects::plyfe_cms {
     source        => 'plyfe/plyfe-cms',
   }
 
+  nodejs::module {
+    'ember-cli':
+      node_version => 'v0.10';
+  }
+
 }
