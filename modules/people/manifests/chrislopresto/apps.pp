@@ -6,5 +6,6 @@ class people::chrislopresto::apps {
   include sequel_pro
   include zsh
   include heroku
+  include gh
 
 }
